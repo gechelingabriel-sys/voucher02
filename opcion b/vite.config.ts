@@ -13,8 +13,10 @@ export default defineConfig(({ mode }) => ({
     },
   },
 
-  base: "/cajafinal-20fe854b/",
-
+  export default defineConfig({
+  base: '/',
+  // ...
+})
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
